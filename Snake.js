@@ -989,7 +989,7 @@ function displayGameStats(){
 function displaySnakeSize(){
 
     var SNAKE_SIZE = TARGET_COLLISION_COUNT + BODY_SIZE + 1;
-    document.getElementById("snakeSize").innerHTML = "Snake is " + SNAKE_SIZE.toString() + " blocks";
+    // document.getElementById("snakeSize").innerHTML = "Snake is " + SNAKE_SIZE.toString() + " blocks";
 
     //sets the position for textbox
     // snakeSize.style.position = 'absolute';  // position it
@@ -1150,23 +1150,23 @@ function setup(){
 function draw(){
 
     //plays the soundtrack for the game
-    playGameSound();
+    // playGameSound();
 
  
     // create the background with the grid lines
     createBackgroundWithGridLines();
 
     //display the score count in a textbox
-    displayScore();
+    // displayScore();
 
     //display the stats of the game in a textbox
-    displayGameStats();
+    // displayGameStats();
 
     //displays the size of the snake
-    displaySnakeSize();
+    // displaySnakeSize();
 
     //displays what difficulty/speed mode/level the game is at
-    displayMode();
+    // displayMode();
 
     //if the snakehead has reached the Target, 
     //   target will disappear and reappear somewhere else

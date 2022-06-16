@@ -157,9 +157,9 @@ function gameLoop() {
     now = Date.now();
     var elapsed = now - then;
             
-    displaySnakeSize();
-    displayScore();
-    displayGameStats();
+    // displaySnakeSize();
+    // displayScore();
+    // displayGameStats();
     
 
     // if enough time has elapsed, draw the next frame
