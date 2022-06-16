@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+ <html>
+   <title>SNAKE GAME</title>
+   <link rel="icon" href="logo.ico">
+ <head>
+   
+  <style>
+
+    #gameScreen{
+      border : 30px solid black;
+      text-align: center;
+      align-self: center;
+    }
+    #canvas-container {
+      width: 100%;
+      text-align:center;
+    }
+
+    canvas {
+      display: inline;
+    }
+
+    #inputs{
+      overflow-x:auto;
+      width:fit-content;
+    }
+
+    body {
+      background-color: #1c6e17;
+    }
+
+  </style>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script> -->
+    
+  <meta charset="utf-8"/>
+
+ </head>
+
+  <body>
+
+    <div id="canvas-container">
+      <canvas id="gameScreen"/>
+    </div>
+
+    <div 
+      id="inputs"
+      style="border: 2px solid green"
+    >
+      <td><label id="scoreCount">Score Count = 0</label></td>
+      <br>
+      <td><label id="snakeSize">Snake Size = 5</label></td>
+      <br>
+      <td><label id="gameStatus">Snake is fine</label></td>
+    </div>
+      <label>Select Game Speed:</label>
+      <input type="range" id="speed" name="speed" min="2" max="999">
+      <button id="Go" name="Go" type="button">Go</button>
+    </div>
+
+    <div
+    id="Controls"
+    >
+        <img src="./src/Controls/left.png" width="50px" height="50px" id="left">
+        <img src="./src/Controls/up.png" width="50px" height="50px" id="up">
+        <img src="./src/Controls/down.png" width="50px" height="50px" id="down">
+        <img src="./src/Controls/right.png" width="50px" height="50px" id="right">
+        <img src="./src/Controls/stop.png" width="50px" height="50px" id="stop">
+    </div>
+    
+
+    <script type="module" src="./src/game.js"></script>
+    
+  </body>
+</html>
