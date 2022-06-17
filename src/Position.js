@@ -1,13 +1,6 @@
-
-export class Position{
- 
-    //attributes = x,y
- 
+export class Position{ 
     constructor(x,y) {
- 
         this.x = x;
         this.y = y;
-
     }
- 
 }

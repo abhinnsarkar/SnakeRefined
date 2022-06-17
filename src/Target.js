@@ -1,20 +1,16 @@
-
-import { gc } from './Globals.js';
+import { globals } from './Globals.js';
 import { Block } from './Block.js';
 import { GAME_COLORS } from './Colors.js';
 
-export class Target{
- 
+export class Target{ 
     //attributes = block
     //behavior = draw,eaten
      
         constructor(){
-        
             var targetRow = this.getTargetPosition();
             var targetCol = this.getTargetPosition();
             
-            this.block = new Block(targetRow,targetCol,GAME_COLORS.TARGET,gc.TARGET_CURVE);
-            
+            this.block = new Block(targetRow,targetCol,GAME_COLORS.TARGET,globals.TARGET_CURVE);
         }
     
         //draws the target
@@ -27,9 +23,9 @@ export class Target{
         //gets a random position for the target between the first margin and second margin
         getTargetPosition(){
             
-            var sectionMargin = Math.floor((gc.MARGIN/100) * gc.NUM_OF_SECTIONS); // "/100"
+            var sectionMargin = Math.floor((globals.MARGIN/100) * globals.NUM_OF_SECTIONS); // "/100"
     
-            var targetPosition = Math.floor(Math.random() * (gc.NUM_OF_SECTIONS -(2*sectionMargin)) ) + sectionMargin;
+            var targetPosition = Math.floor(Math.random() * (globals.NUM_OF_SECTIONS -(2*sectionMargin)) ) + sectionMargin;
             
             return targetPosition;
     

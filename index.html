@@ -1,13 +1,13 @@
 <!DOCTYPE html>
  <html>
-   <title>SNAKE GAME</title>
+   <title>Snake</title>
    <link rel="icon" href="logo.ico">
  <head>
    
   <style>
 
     #gameScreen{
-      border : 30px solid black;
+      border : 10px solid black;
       text-align: center;
       align-self: center;
     }
@@ -29,6 +29,10 @@
       background-color: #1c6e17;
     }
 
+    #Controls {
+      padding-left: 39.25%;
+    }
+
   </style>
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script> -->
@@ -43,24 +47,20 @@
       <canvas id="gameScreen"/>
     </div>
 
-    <div 
+    <!-- <div 
       id="inputs"
       style="border: 2px solid green"
-    >
+    > -->
       <!-- <td><label id="scoreCount">Score Count = 0</label></td>
       <br>
       <td><label id="snakeSize">Snake Size = 5</label></td>
       <br>
       <td><label id="gameStatus">Snake is fine</label></td> -->
-    </div>
-      <label>Select Game Speed:</label>
-      <input type="range" id="speed" name="speed" min="2" max="999">
-      <button id="Go" name="Go" type="button">Go</button>
-    </div>
-
+    
     <div
     id="Controls"
     >
+        <img src="./src/Controls/start.png" width="65px" height="65px" id="start">
         <img src="./src/Controls/left.png" width="65px" height="65px" id="left">
         <img src="./src/Controls/up.png" width="65px" height="65px" id="up">
         <img src="./src/Controls/down.png" width="65px" height="65px" id="down">
