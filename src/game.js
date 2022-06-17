@@ -93,7 +93,7 @@ function gameSetup(){
   
     setGameCanvasStyle();
 
-    createBackgroundWithGridLines();
+    // createBackgroundWithGridLines();
 
     intialSnakeGrow(mySnake);
 
@@ -130,7 +130,7 @@ function gameLoop() {
         
         ctx.clearRect( 0, 0, canvas.width, canvas.height );
 
-        createBackgroundWithGridLines();
+        // createBackgroundWithGridLines();
 
         myTarget.paint(ctx);
         mySnake.paint(ctx);
