@@ -1,5 +1,6 @@
-const CANVAS_SIZE = 0.275*window.innerWidth;
-const NUM_OF_SECTIONS = 21;
+// const CANVAS_SIZE = 0.275*window.innerWidth;
+const CANVAS_SIZE = 0.4*window.innerWidth;
+const NUM_OF_SECTIONS = 17;
 
 export const globals = {
     MAX_SPEED : 1000,
