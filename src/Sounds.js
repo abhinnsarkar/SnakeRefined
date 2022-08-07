@@ -34,7 +34,7 @@ export function playEatingTargetSound(){
 
 export function playSnakeSound(){
 
-    snakeSound.play();
+    // snakeSound.play();
 
 }
 
